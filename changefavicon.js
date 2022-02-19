@@ -34,6 +34,7 @@ $(document).ready(function(){
             if(changed){
                 changeFavicon('/favicon.jpg');
                 document.title = '才没有寂寞呢(๑‾᷅^‾᷅๑)';
+                changed = false;
                 setTimeout(function() {
                     document.title = originTitle;
                 }, 3000);
