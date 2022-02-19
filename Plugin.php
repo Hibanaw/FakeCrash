@@ -44,10 +44,6 @@ class FakeCrash_Plugin implements Typecho_Plugin_Interface
         /** 分类名称 */
         $jquery = new Typecho_Widget_Helper_Form_Element_Checkbox('jquery', array('jquery' => '加载jQuery'));
         $form->addInput($jquery);
-        // $outOfFocus = new Typecho_Widget_Helper_Form_Element_Text('outOfFocus', NULL, '我失宠了', _t('失宠说点什么'));
-        // $inFocus = new Typecho_Widget_Helper_Form_Element_Text('inFocus', NULL, '我被宠了', _t('聚焦说点什么'));
-        // $form->addInput($outOfFocus);
-        // $form->addInput($inFocus);
     }
 
     /**
@@ -69,7 +65,7 @@ class FakeCrash_Plugin implements Typecho_Plugin_Interface
     {
         $Options = Helper::options()->plugin('FakeCrash');
         if ($Options->jquery || in_array('jquery', $Options->jquery)) {
-            echo '<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>';
+            echo '<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>';
         }
         echo '<script type="text/javascript" src="/usr/plugins/FakeCrash/changefavicon.js"></script>';
 

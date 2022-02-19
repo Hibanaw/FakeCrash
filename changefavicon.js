@@ -25,7 +25,7 @@ $(document).ready(function(){
             setTimeout(function(){
                 if(document.hidden){
                     changed = true;
-                    changeFavicon('/sadfavicon.svg');
+                    changeFavicon('/usr/plugins/FakeCrash/sadfavicon.svg');
                     document.title = !isFirefox ? '喔唷，崩溃啦！':'糟糕，您的标签页崩溃了。';
                 }
             },3000);
