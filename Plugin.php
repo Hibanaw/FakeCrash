@@ -5,7 +5,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * 
  * @package FakeCrash
  * @author Hibanaw
- * @version 1.0.0
+ * @version 1.0.1
  * @link https://hibanaw.com
  */
 class FakeCrash_Plugin implements Typecho_Plugin_Interface
